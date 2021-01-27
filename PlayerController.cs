@@ -40,10 +40,10 @@ public class PlayerController : MonoBehaviour
 
     void setCountText(){
         CountText.text = "Points: " + points.ToString();
-        if(count >= 8 && points == 8){
+        if(count >= 12 && points == 12){
             WinTextObject.SetActive(true);
         }else{
-            if(count >= 8 && points < 8){
+            if(count >= 12 && points < 12){
                 LoseTextObject.SetActive(true);
             }
         }
